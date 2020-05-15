@@ -1,0 +1,102 @@
+body {
+  background-color: #101130;
+  /* color: #2ccfa2; */
+  color: #26466a;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: green;
+}
+
+button {
+  text-align: center;
+}
+
+div > button {
+  display: flex;
+}
+
+.project-image {
+  position: relative;
+  background-color: black;
+  /* border: red 3px solid; */
+  margin: 30px;
+  overflow: hidden;
+  width: 315px;
+  height: 315px;
+  border-radius: 50%;
+}
+
+.project-image > img {
+  /* width: 480px; */
+}
+
+#doteater > .static {
+  width: 460px;
+  left: -58px; 
+  top: 17px;
+}
+
+#doteater > .moving {
+  width: 565px;
+  left: -126px;
+  bottom: -55px;
+}
+
+#weatherpet > .static {
+  width: 550px;
+}
+
+#weatherpet > .moving {
+  width: 551px;
+}
+
+#shop > .static {
+  height: 315px;
+}
+
+#shop > .moving {
+  width: 315px;
+  top: 24%;
+}
+
+.static {
+  position: absolute;
+  z-index: 9;
+}
+
+.moving {
+  position: absolute;
+  opacity: 1;
+  z-index: 1;
+}
+
+.static:hover {
+  opacity: 0;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+  /* border: pink 3px solid; */
+  height: 400px;
+}
+
+.nav button{
+  border: none;
+  background: none;
+}

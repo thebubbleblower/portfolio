@@ -19,8 +19,10 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
+    "@react-pdf/renderer": "^1.6.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-pdf": "^4.1.0",
     "react-router-dom": "^5.2.0",
     "webpack-dev-server": "^3.11.0"
   }
