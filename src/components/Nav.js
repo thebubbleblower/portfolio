@@ -1,6 +1,6 @@
 import React from 'react';
 import Popup from 'reactjs-popup';
-import Resume from "./Resume.js"
+import Resume from "./Resume.js";
 
 class Nav extends React.Component {
   constructor(props){
@@ -33,7 +33,9 @@ class Nav extends React.Component {
             closeOnDocumentClick onClose={this.hideResume} 
             contentStyle={{border:"none", padding:"none", background:"none"}}
             >
-        <Resume />
+            <a href="../../public/assets/CarmenWen_Resume_(Official).pdf" target="blank">
+              <Resume />
+            </a>
       </Popup>
     </div>
   }
