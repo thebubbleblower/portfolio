@@ -1,7 +1,6 @@
 body {
   background-color: #101130;
-  /* color: #2ccfa2; */
-  color: #26466a;
+  color: #9296a3;
 }
 
 h1 {
@@ -22,11 +21,30 @@ a {
   color: green;
 }
 
-.nav > button {
+#greetings {
+  width: 467px;
   text-align: center;
-  color: green;
+}
+
+.not-selected {
+  text-align: center;
+  color: #aadabf;
   cursor: pointer;
   outline: none;
+  font-size: 20px;
+}
+
+.nav > button:hover {
+  text-shadow: 0 0 10px #5ebba1, 0 0 15px #5ebba1, 0 0 20px #5ebba1;
+}
+
+.selected {
+  text-align: center;
+  color: #aadabf;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+  text-shadow: 0 0 10px #5ebba1, 0 0 15px #5ebba1, 0 0 20px #5ebba1;
 }
 
 div > button {
@@ -41,11 +59,19 @@ div > button {
   overflow: hidden;
   width: 315px;
   height: 315px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
-.projects > div {
-  z-index: -1;
+.project-image:hover {
+  /* box-shadow: 0 0 50px 13px #5ebba1; */
+}
+
+.project {
+  width: 375px;
+}
+
+.short-description {
+  text-align: center;
 }
 
 #doteater > .static {
@@ -65,7 +91,7 @@ div > button {
 }
 
 #weatherpet > .moving {
-  width: 551px;
+  width: 552px;
 }
 
 #shop > .static {
@@ -79,28 +105,28 @@ div > button {
 
 .static {
   position: absolute;
-  z-index: 2;
 }
 
 .moving {
   position: absolute;
   opacity: 1;
-  z-index: 1;
 }
 
 .static:hover {
   opacity: 0;
 }
 
-.projects {
+.all-projects {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   /* border: pink 3px solid; */
   height: 400px;
 }
 
 .nav {
   position: fixed;
+  top: 33%;
 }
 
 .nav button{
@@ -109,8 +135,7 @@ div > button {
 }
 
 #resumePDF {
-  /* border: royalblue 2px solid; */
   display: flex;
   justify-content: center;
-  margin-top: 2%;
+  margin-top: 25%;
 }
