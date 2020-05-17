@@ -22,8 +22,11 @@ a {
   color: green;
 }
 
-button {
+.nav > button {
   text-align: center;
+  color: green;
+  cursor: pointer;
+  outline: none;
 }
 
 div > button {
@@ -41,8 +44,8 @@ div > button {
   border-radius: 50%;
 }
 
-.project-image > img {
-  /* width: 480px; */
+.projects > div {
+  z-index: -1;
 }
 
 #doteater > .static {
@@ -76,7 +79,7 @@ div > button {
 
 .static {
   position: absolute;
-  z-index: 9;
+  z-index: 2;
 }
 
 .moving {
@@ -96,7 +99,18 @@ div > button {
   height: 400px;
 }
 
+.nav {
+  position: fixed;
+}
+
 .nav button{
   border: none;
   background: none;
+}
+
+#resumePDF {
+  /* border: royalblue 2px solid; */
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
 }
